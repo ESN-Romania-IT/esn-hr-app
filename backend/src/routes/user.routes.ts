@@ -17,4 +17,5 @@ router.get("/", (req: Request, res: Response) => {
   res.json([{ id: 1, name: "Raul" }]);
 });
 
+//test
 export default router;
