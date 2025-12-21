@@ -16,7 +16,8 @@
     "lint": "npm run lint --workspace frontend",
     "format:check": "npm run format:check --workspace frontend",
     "build": "npm run build --workspace frontend",
-    "test:run": "npm run test --workspace frontend"
+    "test:run": "npm run test --workspace frontend",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
