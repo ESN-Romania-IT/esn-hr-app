@@ -12,7 +12,12 @@
     "install:all": "npm install --workspaces",
     "dev": "concurrently \"npm run dev --workspace frontend\" \"npm run dev --workspace backend\"",
     "dev:frontend": "npm run dev --workspace frontend",
-    "dev:backend": "npm run dev --workspace backend"
+    "dev:backend": "npm run dev --workspace backend",
+    "lint": "npm run lint --workspace frontend",
+    "format:check": "npm run format:check --workspace frontend",
+    "build": "npm run build --workspace frontend",
+    "test:run": "npm run test --workspace frontend",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -30,6 +35,7 @@
     "cors": "^2.8.5"
   },
   "devDependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "husky": "^9.0.0"
   }
 }
