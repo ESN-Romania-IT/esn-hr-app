@@ -40,18 +40,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build project
-        run: npm run build
-
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v20
         with:
@@ -59,4 +47,3 @@ jobs:
             vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
             vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
             vercel-args: ${{ github.ref == 'refs/heads/main' && '--prod' || '' }}
-            working-directory: ./frontend
