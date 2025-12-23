@@ -1,4 +1,4 @@
-import { Router, Request, Response } from "express";
+import { Router, Request, Response } from 'express';
 
 const router = Router();
 
@@ -13,8 +13,8 @@ const router = Router();
  *       200:
  *         description: Returns a list of users.
  */
-router.get("/", (req: Request, res: Response) => {
-  res.json([{ id: 1, name: "Raul" }]);
+router.get('/', (req: Request, res: Response) => {
+  res.json([{ id: 1, name: 'Raul' }]);
 });
 
 export default router;
