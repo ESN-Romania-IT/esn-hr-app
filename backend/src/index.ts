@@ -1,9 +1,9 @@
 import express from 'express';
 import cors from 'cors';
-import swaggerSpec from './docs/swagger';
+import swaggerSpec from './docs/swagger.js';
 import { apiReference } from '@scalar/express-api-reference';
 
-import userRoutes from './routes/user.routes';
+import userRoutes from './routes/user.routes.js';
 
 const app = express();
 
