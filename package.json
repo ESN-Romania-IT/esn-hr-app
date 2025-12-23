@@ -14,9 +14,13 @@
     "dev:frontend": "npm run dev --workspace frontend",
     "dev:backend": "npm run dev --workspace backend",
     "lint": "npm run lint --workspace frontend",
+    "lint:backend": "npm run lint --workspace backend",
     "format:check": "npm run format:check --workspace frontend",
+    "format:check:backend": "npm run format:check --workspace backend",
     "build": "npm run build --workspace frontend",
+    "build:backend": "npm run build --workspace backend",
     "test:run": "npm run test --workspace frontend",
+    "test:run:backend": "npm run test --workspace backend",
     "prepare": "husky"
   },
   "repository": {
