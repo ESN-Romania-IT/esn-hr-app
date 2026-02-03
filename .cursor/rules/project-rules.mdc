@@ -1,0 +1,52 @@
+---
+alwaysApply: true
+---
+
+# ESN HR App - Cursor AI Rules
+
+This file contains the main AI instructions for the ESN HR App project.
+
+**IMPORTANT:** Always consult the detailed rule files in the `/docs` folder before writing code.
+
+## Quick Reference
+
+- **Backend Rules:** See `/docs/backend-rules.md`
+- **Frontend Rules:** See `/docs/frontend-rules.md`
+- **Testing Rules:** See `/docs/testing-rules.md`
+- **Refactoring Rules:** See `/docs/refactoring-rules.md`
+- **Workspace Rules:** See `/docs/workspace-rules.md`
+
+## Project Overviewz
+
+You are working on the **ESN HR App**, an HR/Volunteer Management Application for ESN (Erasmus Student Network).
+
+- **Monorepo Structure:** npm workspaces with `frontend/` and `backend/` folders
+- **Frontend:** React 19+, TypeScript, Vite, Tailwind CSS
+- **Backend:** Node.js, Express, TypeScript
+- **Database:** Relational database (PostgreSQL/MySQL)
+- **Authentication:** JWT-based with bcrypt password hashing
+
+## Core Principles
+
+1. **Follow the architecture:** 3-layer architecture (Routes → Controllers → Services)
+2. **Type safety first:** Use TypeScript strictly everywhere
+3. **Security by default:** Never expose sensitive data, always validate input
+4. **Accessibility:** WCAG 2.1 Level AA compliance required
+5. **Performance:** Page loads < 3s, API responses < 500ms
+6. **Testing:** Minimum 80% code coverage for critical modules
+
+## Before Writing Code
+
+1. Read the relevant documentation in `/docs/`
+2. Check the Requirements Document, MVP, and Feature Breakdown
+3. Follow the naming conventions and folder structure
+4. Ensure all acceptance criteria are met
+
+## Code Owners
+
+- Frontend: @elizadoltu @superraul10
+- Backend: @elizadoltu @superraul10
+
+---
+
+**Always refer to the detailed rules in `/docs/` before generating code.**
